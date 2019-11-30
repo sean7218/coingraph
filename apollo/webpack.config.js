@@ -9,9 +9,12 @@ module.exports = {
         rules: [
             {
                 test: /\.ts?$/,
-                use: 'ts-loader',
+                use: [ 
+                    {loader: 'ts-loader'},
+                    {loader: 'prettier-loader'}
+                ],
                 exclude: /node_modules/,
-            }
+            },
         ]
     },
     resolve: {

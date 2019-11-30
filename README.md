@@ -1,8 +1,10 @@
-# COIN GRAH
+# COINGRAH
 
 graphql server by apollo
 
-### Postgres
-```
-docker run --name coingraph -e POSTGRES_PASSWORD=password123 -e POSTGRES_DB=coingraph -d postgres
-```
+## Tech Stack
+1. Apollo Server
+2. typescript
+3. Webpack HMR
+4. docker
+5. postgres
