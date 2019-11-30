@@ -10,6 +10,7 @@ COPY ./src /app/src
 COPY ./package.json /app/package.json
 COPY ./tsconfig.json /app/tsconfig.json
 COPY ./webpack.config.js /app/webpack.config.js
+COPY ./.env /app/.env
 
 WORKDIR /app
 

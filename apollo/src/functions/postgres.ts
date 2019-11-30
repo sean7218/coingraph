@@ -1,13 +1,13 @@
 'use strict';
-import { Pool } from 'pg'
+import { Pool } from 'pg';
 
 export const createPool = () => {
     const poolConfiguration = {
-      host          : process.env.RDS_HOST,
-      database      : process.env.RDS_DATABASE,
-      user          : process.env.RDS_USER,
-      password      : process.env.RDS_PASSWORD,
-      port          : parseInt(process.env.RDS_PORT ? process.env.RDS_PORT : "5432")
+      host          : process.env.DB_HOST,
+      database      : process.env.DB_DATABASE,
+      user          : process.env.DB_USER,
+      password      : process.env.DB_PASSWORD,
+      port          : parseInt(process.env.DB_PORT!)
     }
     
     return new Pool(poolConfiguration)

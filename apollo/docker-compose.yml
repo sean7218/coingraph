@@ -15,8 +15,20 @@ services:
     ports:
       - "5432:5432"
 
+  app:
+    container_name: coingraph_api
+    build: .
+    image: coingraph_api
+    volumes:
+      - .:/app
+    environment:
+      - SHELL=/bin/bash
+    ports:
+      - "4000:4000"
+    tty: true
+
 volumes:
-  coingraph_postgress_volume: 
+  coingraph_postgress_volume:
 
 networks:
   coingraph_network:
