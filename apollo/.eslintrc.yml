@@ -13,4 +13,6 @@ parserOptions:
   sourceType: module
 plugins:
   - '@typescript-eslint'
-rules: {}
+rules: {
+  "no-unused-vars": ["error", { "args": "all" }]
+}

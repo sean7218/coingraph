@@ -10,8 +10,9 @@ module.exports = {
             {
                 test: /\.ts?$/,
                 use: [ 
-                    {loader: 'ts-loader'},
-                    {loader: 'prettier-loader'}
+                    'ts-loader',
+                    'prettier-loader',
+                    'eslint-loader',
                 ],
                 exclude: /node_modules/,
             },

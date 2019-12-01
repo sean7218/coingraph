@@ -3,7 +3,7 @@ import dotenvExpand from 'dotenv-expand'
 const myEnv = dotenv.config()
 dotenvExpand(myEnv)
 
-import { ApolloServer, gql } from 'apollo-server'
+import { ApolloServer } from 'apollo-server'
 import typeDefs from './functions/schema'
 import resolvers from './functions/resolver'
 
