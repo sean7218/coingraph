@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+
+
 const Home = () => (
   <div className="container">
     <Head>
@@ -12,7 +14,7 @@ const Home = () => (
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
 
-      <p className="description">
+      <p className="example">
         Get started by editing <code>pages/index.js</code>
       </p>
 
